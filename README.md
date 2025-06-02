@@ -124,7 +124,8 @@
     
 
 
-    ![Ekran görüntüsü 2025-06-02 160804](https://github.com/user-attachments/assets/b4d7a6c9-23d5-4962-bbe3-6b58ec0e66c3)
+   ![Ekran görüntüsü 2025-06-02 160804](https://github.com/user-attachments/assets/13e998c8-e10a-4a95-8376-acd328009a44)
+
     
   ![Ekran görüntüsü 2025-06-02 170034](https://github.com/user-attachments/assets/d47d072e-d78d-42cb-b088-ac708384b4ff)
   
