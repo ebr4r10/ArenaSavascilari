@@ -2,15 +2,15 @@
 
     public class Karakter
     {
-        public string Ad { get; set; }
+        public string Ad { get; set; } //karakterin olması gereken özelliklerini ekledim burada
         public int Can { get; set; }  
         public int Guc { get; set; }
         public int Mana { get; set; }
       
-        public static int ToplamSaldiriSayisi = 0;  // Tüm karakterlerin toplam yaptığı saldırı sayısını tutar
+        public static int ToplamSaldiriSayisi = 0;  // tüm karakterlerin yaptığı saldırıları tutyor
 
         public Karakter() { }
-        public void BilgileriGoster()
+        public void BilgileriGoster() // hiç bir şey başlamadan başlangıçta sahip oldugu isim, can, güç, mana özelliklerini ekrana yazdırmak için
         {
             Console.WriteLine($"{Ad} - Can: {Can}, Güç: {Guc}, Mana: {Mana}");
         }
@@ -23,7 +23,7 @@
             Console.WriteLine($"{Ad} {miktar} hasar aldı! Kalan Can: {Can}");
         }
     }
-    public class Oyuncu : Karakter
+    public class Oyuncu : Karakter //burada oyuncu sınıfı karakter sınıfından miras alıyor
     {
         public Oyuncu(string ad, int can, int guc, int mana)
         {
@@ -46,7 +46,7 @@
         }
 
     }
-    public class Dusman : Karakter
+    public class Dusman : Karakter // düşman sınıfı karakter sınıfından miras alıyor
     {
         public Dusman(string ad, int can, int guc, int mana)
         {
@@ -67,8 +67,8 @@
             static void Main(string[] args)
             {
                 // Oyuncu ve düşman nesneleri oluşturuluyor
-                Oyuncu oyuncu = new Oyuncu("HERO", 100, 20, 30);
-                Dusman goblin = new Dusman("GOBLİN", 100, 10, 0);
+                Oyuncu oyuncu = new Oyuncu("HERO", 100, 20, 30); //toplam başlangıçta sahip oldukları özellikler
+                Dusman goblin = new Dusman("GOBLİN", 100, 10, 0); //toplam başlangıçta sahip oldukları özellikler
 
                 Console.WriteLine("     savaş başladı!    ");
                 // Başlangıç bilgileri ekrana yazdırılıyor
@@ -109,7 +109,7 @@
                 }
 
                 if (oyuncu.Can <= 0)
-                    Console.WriteLine("        - ezik kaybettin hahaha -");
+                    Console.WriteLine("        -  kaybettin hahaha -"); //duruma göre ekrana yazdırılan sonuçlar
                 else
                     Console.WriteLine( "     - helal olsun kazandın - ");
 
