@@ -1,4 +1,5 @@
 # ArenaSavascilari
+
  public class Karakter
  {
      public string Ad { get; set; }
